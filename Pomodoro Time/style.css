@@ -1,0 +1,120 @@
+/*Reset all browser style*/
+
+@import "compass/reset";
+
+/*Mixins*/
+@mixin absoluteCenter{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin: 0 auto;
+}
+
+@mixi btn-styles{
+    text-align:center;
+    border: 1px solid #7f8c8d;
+    border-radius: 5px;
+    background-color:#ECF0F1;
+    font-weight:600;
+    color:#000;
+
+}
+
+body{
+    background-color: dodgerblue;
+}
+/*Mobile Styles*/
+  
+@media only screen and (max-width: 720px) {
+  
+  .clock {
+          max-width: 100%;
+      }
+
+      .clock-timer {
+          font-size: 7em !important;
+      }
+
+      .session-length {
+          max-width: 100%;
+          font-size: 1.5em !important;
+      }
+
+      .session-length .btn {
+          width: 30px !important;
+          height: 30px !important;
+      }
+
+      .btn-control {
+          padding: 5px !important;
+          margin: 80px 5px !important;
+      }
+  }
+
+/*Desktop Styles*/
+
+  .session-length .btn {
+      width: 70px;
+      height: 30px;
+      text-align: center;	
+      margin-top: 10px;
+  }
+
+  .clock {
+      width: 500px;
+      height: 150px;
+      @include absoluteCenter;
+      text-align: center;
+  cursor: pointer;
+  }
+
+  .clock-timer {
+      font-size: 12em;
+      font-family: 'Lato', sans-serif;
+  }
+
+  .session-length {
+      width: 500px;
+      font-size: 2em;
+      margin: 50px auto;
+      text-align: center;
+  }
+
+  .pomodoro-length {
+      float: left;
+  }
+
+  .break-time-length {
+      float: right;
+  }
+
+  .btn-control {
+      padding: 15px 35px; 
+      margin-top: 80px;
+      @include btn-styles;
+      margin-left: 20px;
+      margin-right: 20px;
+  cursor: pointer;
+  }
+
+  .btn-control:hover {
+      background-color: #F1C40F;
+      color: #333;
+  }
+
+  .btn-count {
+      @include btn-styles;
+      padding: 5px 10px;
+  cursor: pointer;
+  }
+
+  .reset:hover {
+      background-color: transparent;
+  }
+
+  .hidden {
+      display: none;
+  }
+  

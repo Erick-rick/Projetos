@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel='stylesheet' type="text/css">
     <title>Pomodora Clock</title>
 </head>
 <body>
@@ -12,14 +13,23 @@
                 <div class="pomodoro">
                     <p>Duração da sessão </p>
                     <button class=" btn btn-count" id="pomodoro-plus-btn">+</button>
-                    <span></span>
-
+                    <span class= "break-minutes-count"></span>
+                    <button class="btn btn-count" ></button>
+                </div>
+            </div>
+            <section class= "relogio">
+                <div class="clock-timer" id="clock-timer">
+                    <span class="minutos"></span>:<span class="segundos"></span>
                 </div>
 
-            </div>
+                <div class="options">
+                    <button class="btn btn-control start-pomodoro">Start Pomodoro</button>
+					<button class="btn btn-control break">Take a break</button>
+					<button class="btn btn-control reset hidden">Reset</button>
+                </div>
+            </section>
 
         </div>
-
     </div>
     
 </body>
