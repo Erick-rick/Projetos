@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(red, green, blue);
+    animation-name: mudancacor;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mudancacor{
+    0%{background-color: aquamarine;}
+    10%{background-color: cadetblue;}
+    20%{background-color: aqua;}
+    30%{background-color: deepskyblue;}
+    40%{background-color: mediumblue;}
+    50%{background-color: darkblue;}
+    60%{background-color: navy;}
+    70%{background-color: snow;}
+    80%{background-color: brown;}
+    90%{background-color: crimson;}
+    100%{background-color: red;}
+}
